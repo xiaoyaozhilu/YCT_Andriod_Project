@@ -1,0 +1,77 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index"
+		}
+		,{
+					"path" : "pages/cart/cart",
+					"style" : {}
+			}
+		,{
+				"path" : "pages/member/member",
+				"style" : {}
+		 }
+		,{
+				"path" : "pages/news/news",
+				"style" : {}
+		 }
+			,{
+					"path" : "pages/goods/goods",
+					"style" : {
+						"navigationBarTitleText":"商品列表",
+						"enablePullDownRefresh": true
+					}
+			}
+        ,{
+            "path" : "pages/contact/contact",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/pics/pics",
+            "style" : {
+							"navigationBarTitleText":"社团风采"
+						}
+        }
+        ,{
+            "path" : "pages/news-detail/news-detail",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/goods-detail/goods-detail",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/scenery/scenery",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+		"globalStyle": {
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "中北小店",
+			"navigationBarBackgroundColor": "#3F536E",
+			"backgroundColor": "#F8F8F8"
+		},
+		"tabBar": {
+			"selectedColor":"#333333",
+			"color":"#cccccc",
+			"list": [
+				{
+					"text":"首页",
+					"pagePath":"pages/index/index",
+					"iconPath":"static/icon/home.png",
+					"selectedIconPath":"static/icon/home-active.png"
+				},
+				{
+					"text":"资讯",
+					"pagePath":"pages/news/news",
+					"iconPath":"static/icon/news.png",
+					"selectedIconPath":"static/icon/news-active.png"
+				}				
+			]
+		}
+}
